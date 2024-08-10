@@ -10,8 +10,8 @@ public class TimePoint implements Comparable<TimePoint>{
     @Override
     public int compareTo(TimePoint arg0) {
         //TODO
-        return (int)timeUnit.SECOND.beetwen(arg0, this);
-        
+
+        return Math.round(timeUnit.SECOND.beetwen(arg0, this));  
     }
     public float getAmount() {
         return amount;
