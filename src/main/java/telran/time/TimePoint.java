@@ -8,9 +8,9 @@ public class TimePoint implements Comparable<TimePoint>{
         this.timeUnit = timeUnit;
     }
     @Override
-    public int compareTo(TimePoint timePoint) {
+    public int compareTo(TimePoint arg0) {
         //TODO
-        return (int)timeUnit.SECOND.beetwen(timePoint, this);
+        return (int)timeUnit.SECOND.beetwen(arg0, this);
         
     }
     public float getAmount() {
