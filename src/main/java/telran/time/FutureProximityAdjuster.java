@@ -26,7 +26,6 @@ public class FutureProximityAdjuster implements TimePointAdjuster{
         while(startPoint <= endPoint) {
             int middlePoint = (startPoint + endPoint) / 2;
             int comparedMiddle = timePoints[middlePoint].compareTo(timePoint);
-            // if(comparable)
             if(comparedMiddle > 0){
                 endPoint = middlePoint - 1;
                 result = middlePoint;
